@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>    
+    <title>Здравсити</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/cs-skin-border.css" />
+        <!-- jQuery -->
+        <script src="js/jquery-3.4.1.min.js"></script>    
+
+</head>
+<body>
+    <section class="parent">
+        <div class="block">
+            <div class="brand-name">
+                <img class="brand-name-img" src="img/zdravcity.png"></img>
+            </div>
+            <div class="brand-slogan">
+                <span class="brand-slogan-blue">Аптечка</span><br>с собой
+            </div> 
+            <div class="brand-img">
+
+                <img class="woman" src="img/woman.png"/>
+                    <img class="med med-1" src="img/med-1.png"/>
+                    <img class="med med-2" src="img/med-2.png"/>
+                    <img class="med med-3" src="img/med-3.png"/>
+                    <img class="med med-4" src="img/med-4.png"/>
+                    <img class="med med-5" src="img/med-5.png"/>
+                    <img class="med med-6" src="img/med-6.png"/>
+                    <img class="med med-7" src="img/med-7.png"/>
+                    <img class="med med-8" src="img/med-8.png"/>
+                    <img class="med med-9" src="img/med-9.png"/>   
+            </div>   
+        
+            <div class="brand-img-mob">
+
+            <img class="woman-mob" src="img/woman.png"/>
+                <img class="med-mob med-mob-1" src="img/med-1.png"/>
+                <img class="med-mob med-mob-2" src="img/med-2.png"/>
+                <img class="med-mob med-mob-3" src="img/med-3.png"/>
+                <img class="med-mob med-mob-4" src="img/med-4.png"/>
+                <img class="med-mob med-mob-5" src="img/med-5.png"/>
+                <img class="med-mob med-mob-6" src="img/med-6.png"/>
+                <img class="med-mob med-mob-7" src="img/med-7.png"/>
+                <img class="med-mob med-mob-8" src="img/med-8.png"/>
+                <img class="med-mob med-mob-9" src="img/med-9.png"/>
+            </div>   
+            
+            <div class="brand-description">
+                На дворе сезон путешествий. Самое время собирать чемоданы и планировать интересные маршруты. Но важно помнить: хороший отдых должен быть безопасным. Расскажите, куда и с кем вы поедете, а мы поможем собрать в дорогу нужные лекарства.
+            </div>
+            
+            <div class="brand-input">
+                    <select id="put1" class="put1 cs-select cs-skin-border z-10">
+                            <option value="" disabled selected>Куда отправитесь отдыхать</option>
+                            <option value="1">В экзотическую страну</option>
+                            <option value="2">За город на пикник</option>
+                            <option value="3">В Европу на автомобиле</option>
+                            <option value="4">На море в Турцию</option>
+                    </select>
+
+                    <select id="put2" class="put2 cs-select cs-skin-border z-20">
+                        <option value="" disabled selected>Кого возьмете с собой</option>
+                        <option value="1">Детей</option>
+                        <option value="2">Вторую половинку</option>
+                        <option value="3">Родителей</option>
+                        <option value="4">Пару друзей</option>
+                    </select>
+
+                    <a href="#" id="btn" class="btn js-open-modal" data-modal="1">Начать</a>                   
+            </div>
+            <div id="brand-slogn-bottom" class="brand-slogn-bottom">
+                Отлично, вы собрались <span id="put1-out">на море в Турцию</span> <span id="put2-out">с детьми</span>. <br> Какие лекарства возьмёте с собой? Место в аптечке ограничено.
+            </div>
+            
+            <div class="warning">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ И ПРОКОНСУЛЬТИРОВАТЬСЯ С ВРАЧОМ</div>
+        </div>
+    </section>
+
+    <div class="modal" data-modal="1">
+        
+        <div class="modal-main" style="max-width: 1280px;">
+            <div class="modal-main-top"> 
+                    <div class="game-brand-modal">
+                            <img class="brand-name-img" src="img/zdravcity.png"></img>
+                        </div>  
+                              
+                <div id="modal-main-left" class="modal-main-left">
+                    <a data-tooltip="" class="modal-link modal-img-1"> <img class="modal-img" id="1" src="img/game/med-1.png"/></a>
+                    <a data-tooltip="" class="modal-link modal-img-2"> <img class="modal-img" id="2" src="img/game/med-2.png"/></a>
+                    <a data-tooltip="" class="modal-link modal-img-3"> <img class="modal-img" id="3" src="img/game/med-3.png"/></a>
+                    <a data-tooltip="" class="modal-link modal-img-4"> <img class="modal-img" id="4" src="img/game/med-4.png"/></a>
+                    <a data-tooltip="" class="modal-link modal-img-5"> <img class="modal-img" id="5" src="img/game/med-5.png"/></a>
+                    <a data-tooltip="" class="modal-link modal-img-6"> <img class="modal-img" id="6" src="img/game/med-6.png"/></a>
+                    <a data-tooltip="" class="modal-link modal-img-7"> <img class="modal-img" id="7" src="img/game/med-7.png"/></a>
+                    <a data-tooltip="" class="modal-link modal-img-8"> <img class="modal-img" id="8" src="img/game/med-8.png"/></a>
+                    <a data-tooltip="" class="modal-link modal-img-9"> <img class="modal-img" id="9" src="img/game/med-9.png"/></a>                                                                                     
+                    <a data-tooltip="" class="modal-link modal-img-10"><img class="modal-img" id="10" src="img/game/med-10.png"/></a>                                                      
+                        
+                </div>
+                
+                <div class="modal-main-right">                        
+                       
+                <div class="modal-matrix modal-matrix-img-1"> 
+                    <div class="modal-matrix-img" id="matrix-img-1"> </div> 
+                </div>
+                <div class="modal-matrix"> 
+                    <div class="modal-matrix-img" id="matrix-img-2"> </div> 
+                </div>
+                <div class="modal-matrix"> 
+                    <div class="modal-matrix-img" id="matrix-img-3"> </div>  
+                </div>
+                <div class="modal-matrix modal-matrix-img-4"> 
+                    <div class="modal-matrix-img" id="matrix-img-4"> </div>  
+                </div>
+                <div class="modal-matrix modal-matrix-img-5"> 
+                    <div class="modal-matrix-img" id="matrix-img-5"> </div>
+                </div>
+                <div class="modal-matrix"> 
+                    <div class="modal-matrix-img" id="matrix-img-6"> </div>
+                </div>
+                <div class="modal-matrix"> 
+                    <div class="modal-matrix-img" id="matrix-img-7"> </div> 
+                </div>
+                <div class="modal-matrix modal-matrix-img-8"> 
+                    <div class="modal-matrix-img" id="matrix-img-8"> </div> 
+                </div>
+                </div>                                       
+            </div>
+            <div class="modal-main-bottom">                
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО<br> ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ И ПРОКОНСУЛЬТИРОВАТЬСЯ С ВРАЧОМ
+            </div>
+            <div class="modal-btn-group">
+                <a href="#" id="remove-btn" class="remove-btn"> <img src="img/remove.png"/></a>
+                <a href="#" id="moda-btn" class="modal-btn js-open-modal" data-modal="2"> <img src="img/next.png"/></a> 
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal" data-modal="2" background="#FDFF3A">
+        <div class="modal-final">
+            <div class="modal-final-main">
+                    <div class="game-brand-modal" style="right: 5%;">
+                            <img class="brand-name-img" src="img/zdravcity.png"></img>
+                        </div>
+                <div class="modal-final-right">
+                            <img class="modal-final-img" src="img/final-img.png"/>
+                            <img class="modal-final-img-mob" src="img/final-img-mob.png"/>
+                </div>
+                <div class="modal-final-left">
+                    <div id="final-title" class="modal-final-title">Поздравляем!<br> Вы готовы к отпуску на 80%.</div>
+                    <div id="final-description" class="modal-final-description">Вы действительно разбираетесь в лекарствах не хуже фармацевта. Необходимые препараты собраны, но также стоит захватить Молочко Мустела и Цитрамон.</div>
+                    <div class="modal-final-btm-description">Не хотите волноваться за аптечку в реальном путешествии? Оставьте свой e-mail и мы пришлем вам памятку со всеми лекарствами и <span style="font-weight: bold;">промокодом на скидку 30% от Здравсити</span> так нам будет спокойнее, а вам — выгоднее. Желаем безопасной поездки!</div>
+                    <form id="form" class="modal-final-form" action="mail/sendmail.php" method="POST">
+                         <input class="modal-final-input" name="mail" placeholder="Введите адрес почты">
+                         <input class="modal-final-btn" value="" type="submit">
+                    </form>
+                </div>
+                <div class="modal-final-warning">
+                        ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ И ПРОКОНСУЛЬТИРОВАТЬСЯ С ВРАЧОМ
+                </div>  
+                
+            </div>
+        </div>                
+    </div>
+
+
+
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-modal"></div>
+     <!-- jquery.sendmail.js -->
+    <script src="js/jquery.sendmail.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script>
+			(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
+	</script>
+</body>
+</html>

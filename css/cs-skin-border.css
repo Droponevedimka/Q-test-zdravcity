@@ -1,0 +1,58 @@
+
+div.cs-skin-border {
+	background: transparent;
+	font-size: 16px;
+	font-family:Futura PT Book;
+}
+
+@media screen and (max-width: 30em) {
+	div.cs-skin-border { font-size: 1em; }
+}
+
+.cs-skin-border > span {
+	border: 2px solid #000;	
+	border-color: inherit;
+	-webkit-transition: background 0.2s, border-color 0.2s;
+	transition: background 0.2s, border-color 0.2s;
+}
+
+.cs-skin-border > span::after{	
+	background-image: url(../img/pen.png);
+	background-size: 15px 15px;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    content:"";
+	right: 1em;
+}
+
+.cs-skin-border.cs-active > span {
+	background: #FDFF3A;
+	border-color: #000000;
+
+}
+
+.cs-skin-border .cs-options {
+	color: #000000;	
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, visibility 0s 0.2s;
+	transition: opacity 0.2s, visibility 0s 0.2s;
+}
+
+.cs-skin-border.cs-active .cs-options {
+	opacity: 1;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.cs-skin-border ul span {
+	padding: 1em 0 1em 2em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+	background: #000000;
+	color: #ffffff;
+}

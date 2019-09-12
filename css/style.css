@@ -1,0 +1,969 @@
+@font-face {
+    font-family: "Futura PT";  
+    src: url("fonts/FuturaPT-Demi.ttf")
+}
+@font-face {
+    font-family: "Futura PT Lite";  
+    src: url("fonts/FuturaPT-Light.ttf")
+}
+@font-face {
+    font-family: "Futura PT Book";  
+    src: url("fonts/FuturaPT-Book.ttf")
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    background: #FDFF3A; 
+}
+
+.parent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;    
+}
+
+.block{
+    position: absolute;      
+    width:850px;
+    top: 0;
+    background: #FDFF3A;     
+}
+
+.brand-name{
+    position: absolute;    
+    color: #000000;   
+    right: 3%;
+    top: 0px;
+}
+
+.game-brand-modal{
+   position: absolute;  
+   top: 5%;
+   right: 10%;
+}
+
+.brand-name-img{
+    height: 55px;
+}
+
+.brand-slogan{    
+    position: absolute;
+    top: 5vh;
+    left: 42px;
+    text-align:left;
+    font-family: Futura PT;
+    font-size: 24vh;
+    line-height: 70.2%;
+    color: #000000;
+    z-index: 2; 
+}
+.brand-slogan-blue{
+    color: #1964fb;
+}
+
+.brand-description{
+    position: absolute;
+    width: 44vh;
+    left: 52px;
+    top: 47vh;
+    font-family: Futura PT Lite;
+    font-size: 2.5vh;
+    line-height: 119.7%;
+}
+
+.brand-img{
+    position: absolute;    
+    top:calc(-626px + 70vh);;
+    left: calc(-778px + 89vh);
+    z-index: 5;
+}
+
+.woman{
+    position: absolute;
+    width: 310px;
+    top:356px;
+    left:468px;
+}
+
+@keyframes Orbita2 {
+   from {   left: 750px;
+            top: 450px;
+            transform: rotate(540deg) translateX(150px) rotate(540deg) scale(0,0); }
+   to   { transform: rotate(180deg) translateX(0px) rotate(180deg) scale(0.5,0.5); }
+}
+@keyframes Orbita2-mob {
+   from { 
+      left: 60vw;
+      top: 40vh;
+      transform: rotate(540deg) translateX(10vw) rotate(540deg) scale(0,0);}
+   to   { transform: rotate(180deg) translateX(0px) rotate(180deg)}
+}
+
+.med{    
+    position: absolute;
+    width: auto;
+    height: auto; 
+    transform: scale(0.5,0.5);   
+    animation: Orbita2 3s linear; 
+}
+
+.brand-img-mob{
+   display: none;
+   position: absolute;
+   left: 20vw;
+   top: 43px;
+   z-index: 5;
+}
+
+.woman-mob{
+   position: absolute;
+   width: 40vw;
+   margin-left: 29vw;
+   margin-top: 45vw;
+}
+
+.med-mob{    
+   position: absolute;
+   width: 8vw;
+   height: 8vw;
+   animation: Orbita2-mob 3s linear; 
+}
+
+.med-mob-1{left:19vw; top:45vw; height: 7vw;}
+.med-mob-2{left:14vw; top:34vw; height: 5vw; width: 5vw;}
+.med-mob-3{left:15vw; top:23vw; height: 4vw; width: 5vw;}
+.med-mob-4{left:21vw; top:7vw; height: 12vw; width: 12vw;}
+.med-mob-5{left:36vw; top:-2vw; height: 13vw; width: 11vw;}
+.med-mob-6{left:50vw; top:10vw;}
+.med-mob-7{left:57vw; top:22vw; height: 5vw; width: 5vw;}
+.med-mob-8{left:57vw; top:30vw;}
+.med-mob-9{left:54vw; top:39vw; height: 5vw; width: 5vw;}
+
+.med-1{left:333px; top:350px;}
+.med-2{left:340px; top:276px;}
+.med-3{left:330px; top:219px;}
+.med-4{left:313px; top:77px;}
+.med-5{left:411px; top:5px;}
+.med-6{left:512px; top:55px;}
+.med-7{left:610px; top:140px;}
+.med-8{left:623px; top:156px;}
+.med-9{left:638px; top:297px;}
+
+.brand-input{
+    position: absolute;
+    top:75vh;
+    left:50px;
+}
+
+.put2{
+    width: 28vh;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.put1{
+   width: 28vh;
+}
+
+.btn {   
+    display: inline-block;
+    float: right;
+    text-align: center;
+    width: 10vh;
+    font-size: 1em;
+    font-family: Futura PT Book;        
+    text-decoration: none;
+    user-select: none;
+    padding: 1em 3em;
+    border:2px solid #000000;
+    outline: none;            
+    transition: 0.3s;
+  } 
+
+#btn{
+    color: #000000; 
+    background: #FDFF3A; 
+    cursor: pointer;
+}
+
+.brand-slogn-bottom{
+    position: absolute;
+    width: 80%;
+    left: 52px;
+    top: 84vh;
+    font-family: Futura PT Lite;
+    font-size: 2vh;
+    line-height: 119.7%;
+}
+
+.warning{
+   text-align: center;
+   position: absolute;
+   padding: 0 5%;
+   color: rgba(0, 0, 0, 0.25);
+   top:90vh;
+   font-size: 20px;
+}
+
+#brand-slogn-bottom{
+    display: none;
+}
+
+.brand-slogn-bottom span{
+    font-weight: bold;
+}
+
+/* Модальное окно */
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    z-index: 100;
+    transition: .3s all;
+ }
+ 
+ 
+ /* Стили для модальных окон */
+ 
+ .modal {
+    
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    /*  Установаем ширину окна  */
+    width: 100%;
+    
+    
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101; /* Должен быть выше чем у подложки*/
+    
+    /*  Побочные стили   */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;    
+    background-color:#0565FF;
+    transition: 0.3s all;
+ }
+
+ .modal-main{
+    display: flex;flex-flow: wrap;
+    width: 100%;
+    height: 80%;
+    align-items:center;
+    justify-content: center;
+ }
+
+ .modal-main-top{    
+    display: block;
+    width: 100%;
+    height: 60%;
+ }
+
+ .modal-main-left{
+    position: relative;
+    display: block;  
+    float: left;  
+    margin-left: 100px;
+    width: 400px;
+    height: 500px;    
+ }
+
+ .modal-main-left:hover > img{
+     opacity: 0.5;
+ }
+
+ .modal-main-left:hover > img:hover{
+     opacity: 1;
+ }
+ 
+.classic { padding: 0.8em 1em; }
+		
+.classic {background: #ffffff; color:#000000; }
+
+ .modal-main-right{  
+    display: block; 
+    float: left;      
+    width: 50%;
+    margin-left:110px;    
+    width: 600px;
+    height: 400px;
+    transform: rotateX(63deg) rotate(51deg); 
+ }
+
+ .modal-main-right::before{
+    content: '';
+    position: absolute;
+    width: 520px;
+    height: 275px;
+    top: -29px;
+    left: 2px;
+    border: 2px solid #ffffff;
+    z-index: 100;
+ }
+
+ .modal-main-right::after{
+   content: '';
+   position: absolute;
+   width: 520px;
+   height: 275px;
+   left: 40px;
+   top: 0;
+   border: 2px solid #ffffff;
+   z-index: 100;
+ }
+
+ .modal-matrix{   
+    display: inline-flex;       
+    height: 139px;
+    margin: -1px;
+    padding: 0;
+    width: 130px;
+    background: rgba(255,255,255,0.25);  
+ }
+
+ .modal-matrix-img{  
+    position: absolute; width:130px; height: 139px;  
+}
+ .matrix-img-1{
+    position: relative;
+    left:-50px;
+    top: -37px;
+    transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+    z-index: 102;
+ }
+ .matrix-img-2{
+   position: relative;
+   left:0px;
+   top: 34px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+}
+.matrix-img-3{
+   position: relative;
+   left:0px;
+   top: 35px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+}
+.matrix-img-4{
+   position: relative;
+   left:-50px;
+   top: -37px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+   z-index: 102;
+}
+.matrix-img-5{
+   position: relative;
+   left:-88px;
+   top:-83px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+   z-index: 102;
+}
+.matrix-img-6{
+   position: relative;
+   left:-50px;
+   top: -37px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+   z-index: 102;
+}
+.matrix-img-7{
+   position: relative;
+   left:0px;
+   top: 34px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+}
+.matrix-img-8{
+   position: relative;
+   left:-55px;
+   top:-30px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5); 
+   z-index: 102; 
+}
+.matrix-img-9{
+   position: relative;
+   left:0px;
+   top: 34px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+}
+.matrix-img-10{
+   position: relative;
+   left:0px;
+   top: 35px;
+   transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.5);  
+}
+
+ .modal-matrix-img-1::before{position: absolute; content: ''; border-left: 2px solid #ffffff; height: 45px; top:-36px; left:21px; transform: rotateZ(128deg); z-index: 99;}
+ .modal-matrix-img-4::before{position: absolute; content: ''; border-left: 2px solid #ffffff; height: 44px; top: -36px; right: 55px;transform: rotateZ(128deg); z-index: 99;}
+ .modal-matrix-img-5::before{position: absolute; content: ''; border-left: 2px solid #ffffff; height: 48px; bottom: 113px; left: 19px; transform: rotateZ(128deg); z-index: 99;}
+ .modal-matrix-img-8::before{position: absolute; content: ''; border-left: 2px solid #ffffff; height: 44px; bottom: 115px; right: 55px; transform: rotateZ(128deg); z-index: 99;}
+
+ .modal-main-bottom{
+    position: absolute;
+    display: block;
+    margin-top: 40vh;
+    font-family: Futura PT Lite;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 24px;
+    line-height: 32px;
+    color:rgba(255, 255, 255, 0.25);
+ }
+
+ .modal-btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    width: 100%;
+ }
+ 
+ .modal-btn{
+    display: none;
+    margin-left: 50px;
+    -webkit-filter: blur(2px) invert(1);
+ }
+
+ .modal-btn:hover{
+    -webkit-filter: blur(0) invert(0);
+ }
+
+ .remove-btn{
+   -webkit-filter: blur(2px) invert(1);
+    display: none;
+ }
+
+ .remove-btn:hover{
+    -webkit-filter: blur(0) invert(0);
+}
+.modal-link{
+   position: absolute;
+}
+
+ .modal-img-1{top:250px; left: 170px;}
+ .modal-img-2{top: 265px; left:465px;}
+ .modal-img-3{top: 135px; left: 415px;}
+ .modal-img-4{left: 280px;}
+ .modal-img-5{top: -50px; left: 0; }
+ .modal-img-6{top: 320px; left: 350px; }
+ .modal-img-7{top:220px; left: 330px;}
+ .modal-img-8{top: 70px; left: 130px;}
+ .modal-img-9{top: 230px; left: 20px;}
+ .modal-img-10{top: 370px; left: 0px;}
+
+ 
+  
+ .modal-img{     
+   cursor: pointer;
+   opacity: 0.5; 
+   -webkit-filter: drop-shadow(12px 30px 3px rgba(0,0,0,0.5));
+	drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+}
+
+.modal-img:hover {
+   opacity: 1.0;  
+}
+
+ 
+ /* Стили для активных классов подложки и окна */
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ 
+ /* Стили для кнопки закрытия */
+ 
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+ }
+
+ .modal-final{       
+       
+    position: absolute;
+    display: flex;   
+    justify-content: center;
+    z-index: 101; /* Должен быть выше чем у подложки*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    /*  Побочные стили   */    
+    width: 100%;
+    min-height: 100%;
+    text-align: center;  
+    background-color:#FDFF3A;   
+ }
+
+ .modal-final-main{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    
+ }
+
+ .modal-final-left{
+    position: absolute;
+    left: 10%;
+    width: 45%;
+    float: left;
+ }
+
+ .modal-final-right{
+    float: right;
+    margin-left: 45%;
+    width: 40%;
+    float: left;
+ }
+
+ .modal-final-title{
+    text-align: left;
+     font-family: Futura PT;
+    font-size: 3.5vw;
+    line-height: 105.2%;
+ }
+
+ .modal-final-title span{
+   text-transform:lowercase;
+ }
+
+ .modal-final-description{
+    width: 80%;
+    margin-top: 50px;
+    text-align: left;
+    font-family: Futura PT Lite;
+    font-size: 1.2vw;
+    line-height: 2vw;
+ }
+
+ .modal-final-btm-description{
+    margin-top: 2vw;
+    width: 80%;
+    text-align: left;
+    font-family: Futura PT Lite;
+    font-size: 1.6vw;
+    line-height: 2vw;
+ }
+
+ .modal-final-form{
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: -15%;
+    width: 90%;
+    height: 3.5vw;
+    border:2px solid #000000;
+ }
+
+ .modal-final-input{
+   width: 80%;
+   float: left;
+   text-align: center;
+   font-family: Futura PT Lite;
+   font-size: 30px;
+   font-weight: bold;
+   height: 97%;
+   border: none;
+   background-color: transparent;
+ }
+
+ .modal-final-btn{
+    float: right;
+    height: 100%;
+    border: none;
+    border-left: 2px solid #000000;
+    width: 20%;
+    background-color: #000000;
+    background-image: url(../img/btn-final.png);
+    background-repeat: no-repeat;
+    background-size: 3vw 2vw;
+    background-position: 2.2vw 0.9vw;
+ }
+
+ .modal-final-img{
+    width: 35vw;
+ }
+
+ .modal-final-warning{
+    font-size: 1.3vw;
+    width: 60vw;
+    text-align: center;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.25);
+    margin-top: 26%;
+ }
+
+ .final-text-bold{
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+ }
+
+ .modal-final-img-mob{
+    display: none;
+ }
+
+ .z-10{
+	z-index: 10;
+ }
+ .z-20{
+   z-index: 20;
+ }
+
+ [data-tooltip] {
+  }
+  [data-tooltip]::after {
+   content: attr(data-tooltip); /* Выводим текст */
+   position: absolute; /* Абсолютное позиционирование */
+   width: 200px; /* Ширина подсказки */
+   left: -60px; top: 0; /* Положение подсказки */
+   background: #fff; /* Синий цвет фона */
+   color: #000; /* Цвет текста */
+   font-family: Futura PT Book;
+   text-transform:uppercase;
+   padding: 0.5em; /* Поля вокруг текста */
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+   pointer-events: none; /* Подсказка */
+   opacity: 0; /* Подсказка невидима */
+   transition: 0.5s; /* Время появления подсказки */
+   z-index: 25;
+  } 
+  [data-tooltip]:hover::after {
+   opacity: 1; /* Показываем подсказку */
+   top: -3em; /* Положение подсказки */
+  }
+
+ @media screen and (max-width:  1210px){
+
+   .modal-final{
+      overflow: scroll;
+   }
+   .modal-final-warning{
+      display: none;
+   }
+   .modal-main{
+      height: 100%;
+      width: 90%;
+   }
+
+   .modal-main-top{
+      height: 80%;
+   }
+
+   .modal-main-left{
+      
+      margin-left: 0;
+      height: 50%;
+      width: 100%
+   }
+   .modal-main-right{
+      margin-left: 0%;
+      margin-top: 0vw;
+      width: 90vw;      
+   }
+   .modal-main-right::before{
+      width: 90vw;
+      height: 44vw;
+      top: 0vh;
+      left: -2px;
+   }
+  
+   .modal-main-right::after{
+     width: 90vw;
+     height: 44vw;
+     left: -8vw;
+     top: -6vw;
+   }
+   .modal-matrix{         
+      height: 22vw;   
+      width: 22vw;
+   }  
+   .modal-matrix-img-1::before{display: none;}
+   .modal-matrix-img-4::before{display: none;}
+   .modal-matrix-img-5::before{display: none;}
+   .modal-matrix-img-8::before{display: none;}
+  
+  
+   .modal-matrix-img{  
+      width:10vh; height: 20vw;  
+  }
+   
+ .modal-img-1{top:21vh; left: 23vw;}
+ .modal-img-2{top:21vh; left: 68vw;}
+ .modal-img-3{top:10vh; left: 58vw;}
+ .modal-img-4{top:0vh; left: 36vw;}
+ .modal-img-5{top:-4vh; left: 3vw;}
+ .modal-img-6{top:25vh; left: 47vw;}
+ .modal-img-7{top:17vh; left: 44vw;}
+ .modal-img-8{top:6vh; left: 21vw;}
+ .modal-img-9{top:21vh; left: 2vw;}
+ .modal-img-10{top:34vh; left: -2vw;}
+  .modal-main-bottom{
+     position: absolute;
+     bottom: 5%;
+     height: 5%;
+     font-size: 2vw;
+     line-height: 2vw;
+  }
+   .modal-btn-group{
+      height: 10%;
+      display: absolute;
+      margin-top: 0px;
+   }
+
+   .modal-final-img{
+      display: none;
+   }
+
+   .modal-final-img-mob{
+      width: 80%;
+      margin-left: 10%;
+      display: block;
+   }
+
+   .modal-final-main{
+      display: block;
+   }
+
+   .modal-final-right{
+      margin-top: 10%;
+      margin-left: 0;
+      display: block;
+      float: left;
+      width: 100%;
+   }   
+
+   .modal-final-left{
+      position: relative;
+      display: block;
+      left: 10%;
+      width:88%;
+   }
+
+   .modal-final-title{
+      width: 80%;
+      margin-top: 1.3vh;
+      font-size: 8vw;
+      word-break: break-all;
+   }
+
+   .modal-final-description{
+      margin-top: 5vh;
+      width: 80%;
+      font-size: 5vw;
+      line-height: 5vw;
+   }
+
+   .modal-final-btm-description{
+      width: 80%;
+      font-size: 5vw;
+      line-height: 5vw;
+      margin-top: 5vh;
+   }
+
+   .modal-final-form{
+      height: 10vw;      
+   }
+
+   .modal-final-btn{
+    background-size: 8vw 5vw;
+    background-position: 4.2vw 2.3vw;
+   }
+
+   .modal-final-input{
+      font-size: 5vw;
+      margin-bottom: 6vh;
+   }
+
+
+ }
+
+@media screen and (max-width: 758px){
+   .block{
+     transform: scale(0.7,0.7)
+   }
+   .matrix-img-1{
+      position: relative;
+      left:-50px;
+      top: -57px;
+      transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+      z-index: 102;
+   }
+   .matrix-img-2{
+     position: relative;
+     left:-10px;
+     top: 10px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+  }
+  .matrix-img-3{
+     position: relative;
+     left:-10px;
+     top: 10px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+  }
+  .matrix-img-4{
+     position: relative;
+     left:-50px;
+     top: -57px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+     z-index: 102;
+  }
+  .matrix-img-5{
+     position: relative;
+     left:-68px;
+     top:-113px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+     z-index: 102;
+  }
+  .matrix-img-6{
+     position: relative;
+     left:-50px;
+     top: -57px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+     z-index: 102;
+  }
+  .matrix-img-7{
+     position: relative;
+     left:-10px;
+     top: 10px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+  }
+  .matrix-img-8{
+     position: relative;
+     left:-45px;
+     top:-60px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2); 
+     z-index: 102; 
+  }
+  .matrix-img-9{
+     position: relative;
+     left:-10px;
+     top: 10px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+  }
+  .matrix-img-10{
+     position: relative;
+     left:-10px;
+     top: 10px;
+     transform: rotateX(4deg) rotate(-51deg) rotateY(59deg) scale(1.2);  
+  }
+   .modal-img{
+      transform: scale(0.6,0.6);
+   }
+   .modal-main-right{
+      position: relative;
+      left: -95px;
+   }
+
+  
+}
+
+@media screen and (max-width: 530px){
+   .block{
+      position: absolute;
+      top: 0;
+      width: 90%;
+      transform: scale(1,1)
+   }
+   .brand-name{
+      position: absolute;
+      right: 0%;
+      margin-right: 0;
+   }
+   .brand-name-img{
+      height: 10vw;
+      transform: scale(1,1);
+   }
+   .brand-slogan{
+      position: relative;
+      font-size: 25vw;
+      margin-top: 2vh;
+      top: 0;
+      left: 0vw;
+   } 
+   .brand-img{
+      display: none;
+   }
+   .brand-img-mob{
+      display: block;
+   }  
+   .brand-description{
+      position: absolute;
+      top: 45vw;
+      left: 0;
+      width: 55%;
+      font-size: 4.6vw;
+      line-height: 4.5vw;
+   }
+   .brand-input{
+      position: relative;
+      margin-top: 0;
+      left: 0;
+      top: 33vh;
+      width: 90vw;
+   }
+   .put1{
+      position: relative;
+      display: block;
+      width: 100%;
+   }
+   .put2{
+      position: relative;
+      display: block;
+      width: 100%;
+      top: 2vw;
+      margin: 0;
+   }
+   .btn{
+      position: absolute;  
+      float: both;   
+      padding: 0;
+      margin: 22vh 0 0 0;
+      width: 99.4%;
+      line-height: 53px;
+      text-align: center;
+      font-size: 7vw;
+      height: 53px;
+   }
+   .brand-slogn-bottom{
+      font-size:1.8vh;
+      left: 0;
+      top: 50vh;
+      position: relative;
+      width: 100%;
+   }
+   .warning{
+      width: 100%;
+      left: 0;
+      text-align: center;
+      font-size: 2vw;
+      top: 51vh;
+      position: relative;
+   }
+}
+
+ 
